@@ -1,0 +1,95 @@
+[
+    {
+        "name": "The Impossible Whopper",
+        "description": "A 100% vegetarian burger with a patty manufactured by Impossible Foods. Test marketed in April 2019 in St. Louis, Missouri, with a nationwide rollout in August 2019.",
+        "unique_features": [
+            "Vegetarian",
+            "Impossible Foods patty"
+        ],
+        "promotion": "April Fools-themed video; nationwide availability."
+    },
+    {
+        "name": "The Windows 7 Whopper",
+        "description": "Sold in Japan for the promotion of Microsoft's Windows 7, featuring seven beef patties. Available initially for seven days in October 2009, extended due to popularity.",
+        "unique_features": [
+            "Seven beef patties",
+            "Promotion for Windows 7"
+        ],
+        "promotion": "Extended sale due to popularity."
+    },
+    {
+        "name": "The Pizza Burger",
+        "description": "Exclusive to BK Whopper Bar in Times Square, introduced in September 2010. Four Whopper patties on a 9.5 inch bun, with pepperoni, mozzarella, basil pesto, and marinara sauce.",
+        "unique_features": [
+            "Sliced into six pieces",
+            "Designed for multiple consumers"
+        ],
+        "nutrition": "2,520 calories, 144g fat, 3,780 mg sodium."
+    },
+    {
+        "name": "The Angry Whopper",
+        "description": "Features jalapenos, 'Angry Sauce' and 'Angry Onions', pepper jack cheese, and bacon. Originated in Europe, with a US introduction in 2008. The Angriest Whopper, with a red bun and hot pepper sauce, debuted in 2016.",
+        "unique_features": [
+            "Red bun with hot pepper sauce",
+            "Angry marketing campaign"
+        ],
+        "variations": [
+            "Angriest Whopper with a red bun"
+        ]
+    },
+    {
+        "name": "The BK 1/4 lb Burger",
+        "description": "A direct competitor to McDonald's Quarter Pounder, consisting of a Whopper with ketchup, mustard, pickle, and onions.",
+        "unique_features": [
+            "Direct competitor to McDonald's Quarter Pounder"
+        ]
+    },
+    {
+        "name": "The Whopperito",
+        "description": "A burrito containing all the ingredients of the Whopper, with queso sauce instead of ketchup, mayonnaise, or mustard. Introduced in Pennsylvania in June 2016, with a nationwide rollout in August.",
+        "unique_features": [
+            "Burrito form of the Whopper",
+            "Queso sauce"
+        ]
+    },
+    {
+        "name": "Philippines Variants",
+        "description": "Notable variants in the Philippines include the 3-Meat Whopper, Meat Beast Whopper, and 4-Cheese Whopper, with limited-time variants like the Bacon 4-Cheese Whopper and Cheetos 4-Cheese Crunch.",
+        "unique_features": [
+            "Multiple meats and cheeses",
+            "Limited-time variants"
+        ]
+    },
+    {
+        "name": "The Rebel Whopper",
+        "description": "Introduced in Australia by Hungry Jack's in October 2019 and in other countries subsequently. Features a meat-free patty made from legumes or by The Vegetarian Butcher.",
+        "unique_features": [
+            "Meat-free patty",
+            "International availability"
+        ],
+        "partnerships": [
+            "v2food in Australia",
+            "The Vegetarian Butcher in China"
+        ]
+    },
+    {
+        "name": "Discontinued Variants - Chicken Whopper",
+        "description": "Introduced for the 45th anniversary of the Whopper in 2002 as part of Burger King's move to extend the Whopper brand beyond beef. Featured a whole chicken breast filet.",
+        "outcome": [
+            "Initial success",
+            "Subsequent waning enthusiasm"
+        ],
+        "nutrition_positive": [
+            "Low fat mayonnaise",
+            "Endorsement by CSPI"
+        ]
+    },
+    {
+        "name": "Whooper Challenge",
+        "description": "Le Whooper Challenge invite les clients à manger un Whooper en une seule bouchée !",
+        "outcome": [
+            "Guerilla Marketing",
+            "Problèmes de santé"
+        ]
+    }
+]

@@ -1,0 +1,117 @@
+[
+    {
+        "year": 1991,
+        "name": "Bacon Whopper",
+        "key_elements": [
+            "Bacon"
+        ]
+    },
+    {
+        "year": 1996,
+        "name": "Western Whopper",
+        "key_elements": [
+            "BBQ sauce",
+            "Cheddar or American cheese",
+            "bacon",
+            "option for double or triple beef"
+        ]
+    },
+    {
+        "year": 1998,
+        "name": "Fiesta Whopper",
+        "key_elements": [
+            "Pepper jack cheese",
+            "no pickles",
+            "spicy sauce instead of ketchup"
+        ]
+    },
+    {
+        "year": 2001,
+        "name": "Xtreme Bacon & Cheese Whopper",
+        "key_elements": [
+            "Two slices each Monterey Jack and Cheddar cheese",
+            "four strips of bacon"
+        ]
+    },
+    {
+        "year": 2004,
+        "name": "Whopper Sandwich Platter",
+        "key_elements": [
+            "No bun",
+            "intended for carb-conscious consumers"
+        ]
+    },
+    {
+        "year": 2005,
+        "name": "King Kong Whopper",
+        "key_elements": [
+            "Launched alongside the King Kong movie release in the U.S.",
+            "three beef patties"
+        ]
+    },
+    {
+        "year": 2006,
+        "name": "Texas Double Whopper",
+        "key_elements": [
+            "Jalapeno peppers",
+            "bacon",
+            "mustard instead of ketchup",
+            "served year round in Texas"
+        ]
+    },
+    {
+        "year": 2007,
+        "name": "Ultimate Double Whopper",
+        "key_elements": [
+            "Two beef patties",
+            "American cheese",
+            "eight strips of bacon"
+        ]
+    },
+    {
+        "year": 2009,
+        "name": "Angry Whopper",
+        "key_elements": [
+            "Melted habanero cheese",
+            "hardwood-smoked bacon",
+            "fresh jalapeno slices",
+            "layered spicy onion petals",
+            "topped with Angry sauce"
+        ]
+    },
+    {
+        "year": 2011,
+        "name": "California Whopper",
+        "key_elements": [
+            "Swiss cheese",
+            "guacamole",
+            "thick-cut hardwood smoked bacon"
+        ]
+    },
+    {
+        "year": 2012,
+        "name": "Carolina BBQ Whopper",
+        "key_elements": [
+            "Pepper Jack cheese",
+            "hardwood-smoked bacon",
+            "Bulls-Eye Carolina Style BBQ sauce"
+        ]
+    },
+    {
+        "year": 2012,
+        "name": "Texas BBQ Whopper",
+        "key_elements": [
+            "Bulls-Eye Texas-Style BBQ sauce",
+            "American cheese",
+            "jalapeno slices"
+        ]
+    },
+    {
+        "year": 2012,
+        "name": "Wisconsin White Cheddar Whopper",
+        "key_elements": [
+            "Wisconsin white Cheddar",
+            "thick-cut hardwood smoked bacon"
+        ]
+    }
+]

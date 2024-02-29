@@ -1,0 +1,121 @@
+{
+    "general_statistics": {
+        "daily_burgers_sold": 275,
+        "annual_whopper_sales": 2100000000.0,
+        "daily_customers": 15700000.0,
+        "daily_customers_served": 15700000.0,
+        "restaurants_worldwide": 19247,
+        "countries": ">100",
+        "top_selling_item": "Whopper",
+        "digital_service_user_gender": {
+            "female": 35.14,
+            "male": 64.86
+        },
+        "ceo_annual_salary": 900000,
+        "countries_without_outlets": [
+            "Guam",
+            "American Samoa",
+            "Northern Mariana Islands",
+            "US Virgin Islands",
+            "Puerto Rico"
+        ],
+        "us_locations": 7257
+    },
+    "menu_categories": [
+        "Breakfast meals",
+        "Breakfast sandwiches",
+        "Platters and burritos",
+        "Drinks and coffee",
+        "Breakfast sides"
+    ],
+    "revenue_statistics": {
+        "annual_revenue_2021": 1800000000.0,
+        "sales_revenue_2021": 64000000.0,
+        "franchise_property_revenue_2021": 1740000000.0
+    },
+    "website_traffic_by_country": {
+        "france": {
+            "users": 1800000.0,
+            "desktop": 14.02,
+            "mobile": 85.98
+        },
+        "usa": {
+            "users": 168700.0,
+            "desktop": 48.58,
+            "mobile": 51.42
+        }
+    },
+    "food_pairings": [
+        {
+            "item": "Hamburger",
+            "percentage": 40.09
+        },
+        {
+            "item": "Whopper",
+            "percentage": 39.9
+        },
+        {
+            "item": "Impossible Burger",
+            "percentage": 3.99
+        },
+        {
+            "item": "Sandwich",
+            "percentage": 2.08
+        }
+    ],
+    "ingredient_demand_increase": [
+        {
+            "ingredient": "Irish Whiskey",
+            "percentage": "infinity"
+        },
+        {
+            "ingredient": "Ghost Pepper",
+            "percentage": 15250
+        },
+        {
+            "ingredient": "Bun",
+            "percentage": 549.53
+        },
+        {
+            "ingredient": "Bacon",
+            "percentage": 307.61
+        },
+        {
+            "ingredient": "Cider",
+            "percentage": 138.6
+        }
+    ],
+    "by_outlets": {
+        "top_us_states": {
+            "Texas": {
+                "outlets": 580,
+                "population_per_store": "49.99K"
+            },
+            "Florida": {
+                "outlets": 570,
+                "population_per_store": "37.68K"
+            },
+            "California": {
+                "outlets": 555,
+                "population_per_store": "71.19K"
+            }
+        }
+    },
+    "brand_awareness": {
+        "UK": {
+            "awareness": 95,
+            "likes": 43,
+            "usage": 38
+        },
+        "Germany": {
+            "awareness": 97,
+            "loyalty": 81,
+            "likes": 57
+        },
+        "USA": {
+            "awareness": 95,
+            "loyalty": 80,
+            "likes": 55
+        }
+    }
+}
