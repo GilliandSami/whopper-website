@@ -46,6 +46,6 @@ La maquette du projet est directement disponible à travers le lien **Figma** ci
 
 Divisé en 8 sections principales, le site présentera donc l'historique du Whooper, des faits amusants ainsi que des informations relatifs aux ingrédients et aux ventes de ce mythique Burger ! 
 
-- [**Lien Figma - The Whooper Website **](https://www.figma.com/file/LmaBj2DxoS5HoMbhOivfTn/WireFrame?type=design&node-id=0%3A1&mode=design&t=cUsSzApgxs0iYccy-1) : https://www.figma.com/file/LmaBj2DxoS5HoMbhOivfTn/WireFrame?type=design&node-id=0%3A1&mode=design&t=cUsSzApgxs0iYccy-1
+- [**Lien Figma - The Whooper Website**](https://www.figma.com/file/LmaBj2DxoS5HoMbhOivfTn/WireFrame?type=design&node-id=0%3A1&mode=design&t=cUsSzApgxs0iYccy-1) 
 
 Nous attendons votre demande pour accéder à ce contenu !
