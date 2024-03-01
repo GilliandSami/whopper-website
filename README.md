@@ -39,3 +39,13 @@ Ces travaux servent de référence pour notre projet, enrichissant notre compré
 - [**Nation's Restaurant News**](https://www.nrn.com/news) fournit un historique détaillé de la création et de l'évolution du Whopper, offrant un contexte crucial pour notre analyse.
 
 - [**Wikiwand et Enterprise Apps Today**](https://www.wikiwand.com/en/Burger_King) offrent des statistiques et des faits intéressants sur Burger King, contribuant à une perspective plus large sur la marque et ses produits.
+
+## Wireframe & Maquette - 📎
+
+La maquette du projet est directement disponible à travers le lien **Figma** ci-dessous. 
+
+Divisé en 8 sections principales, le site présentera donc l'historique du Whooper, des faits amusants ainsi que des informations relatifs aux ingrédients et aux ventes de ce mythique Burger ! 
+
+- [**Lien Figma - The Whooper Website **](https://www.figma.com/file/LmaBj2DxoS5HoMbhOivfTn/WireFrame?type=design&node-id=0%3A1&mode=design&t=cUsSzApgxs0iYccy-1) : https://www.figma.com/file/LmaBj2DxoS5HoMbhOivfTn/WireFrame?type=design&node-id=0%3A1&mode=design&t=cUsSzApgxs0iYccy-1
+
+Nous attendons votre demande pour accéder à ce contenu !
