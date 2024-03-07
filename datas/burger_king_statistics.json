@@ -52,11 +52,11 @@
         },
         {
             "item": "Classic Hamburger",
-            "percentage": 19.9
+            "percentage": 14.9
         },
         {
             "item": "Cheeseburger",
-            "percentage": 14.94
+            "percentage": 9.94
         },
         {
             "item": "Impossible Burger",
@@ -72,7 +72,7 @@
         },
         {
             "item": "French Fries",
-            "percentage": 5.09
+            "percentage": 15.09
         }
     ],
     "ingredient_demand_increase": [

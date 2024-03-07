@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Danemark",
+        "population": 5854240,
+        "whopper-per-person": 1
+    },
+    {
+        "name": "Qatar",
+        "population": 2688235,
+        "whopper-per-person": 2
+    },
+    {
+        "name": "Luxembourg",
+        "population": 639321,
+        "whopper-per-person": 10
+    },
+    {
+        "name": "Liechtenstein",
+        "population": 39039,
+        "whopper-per-person": 165
+        }
+
+]
