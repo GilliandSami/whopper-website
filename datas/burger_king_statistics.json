@@ -1,9 +1,9 @@
 {
     "general_statistics": {
-        "daily_burgers_sold": 275,
-        "annual_whopper_sales": 2100000000.0,
-        "daily_customers": 15700000.0,
-        "daily_customers_served": 15700000.0,
+        "daily_burgers_sold": 6480000,
+        "annual_whopper_sales": 2100000000,
+        "daily_customers": 15700000,
+        "daily_customers_served": 15700000,
         "restaurants_worldwide": 19247,
         "countries": ">100",
         "top_selling_item": "Whopper",
