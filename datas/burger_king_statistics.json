@@ -97,6 +97,32 @@
             "percentage": 138.6
         }
     ],
+    "ingredients_kcal": [
+        {
+            "ingredient": "Onion",
+            "calories": 16
+        },
+        {
+            "ingredient": "Steak",
+            "calories": 204
+        },
+        {
+            "ingredient": "Salade",
+            "calories": 8
+        },
+        {
+            "ingredient": "Mayonnaise",
+            "calories": 106
+        },
+        {
+            "ingredient": "Cornichon",
+            "calories": 14
+        },
+        {
+            "ingredient": "Tomates",
+            "calories": 32
+        }
+    ],
     "by_outlets": {
         "top_us_states": {
             "Texas": {
