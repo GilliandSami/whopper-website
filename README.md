@@ -48,4 +48,6 @@ Divisé en 8 sections principales, le site présentera donc l'historique du Whoo
 
 - [**Lien Figma - The Whopper Website**](https://www.figma.com/file/LmaBj2DxoS5HoMbhOivfTn/WireFrame?type=design&node-id=0%3A1&mode=design&t=cUsSzApgxs0iYccy-1)
   
-mot de passe pour accéder au figma : VisualDon2024
+**Mot de passe pour accéder au Figma :** VisualDon2024
+
+![Maquette deu Whopper-Website](maquette_whopper_visualdon.jpg)
