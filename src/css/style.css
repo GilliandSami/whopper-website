@@ -1,10 +1,12 @@
 :root {
     --primary-color: #FF8731;
     --dark-primary-color: #512314;
+    --light-primary-color: #F4EBDC;
     --text-icons-color: #F4EBDC;
     --primary-text-color: #F4EBDC;
     --spacing-unit: 8px;
     --border-radius: 4px; 
+    --transition-speed: 0.3s;
 }
 
 *,
@@ -19,13 +21,43 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-color);
     line-height: 1.5; 
-    margin-top: var(--spacing-unit); 
-    margin-right: var(--spacing-unit);
-    margin-bottom: var(--spacing-unit);
-    margin-left: var(--spacing-unit);
-    padding: var(--spacing-unit);
-
+    padding: 16px 20px; 
+    margin: auto;
 }
+
+header,
+footer,
+main {
+    padding: var(--spacing-unit);
+}
+
+a,
+button {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--light-primary-color);
+    padding: var(--spacing-unit);
+    border: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+}
+
+a:hover,
+button:hover {
+    background-color: var(--dark-primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: var(--spacing-unit);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
 
 #container3D canvas {
     width: 100vw !important;
