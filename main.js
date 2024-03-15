@@ -20,3 +20,103 @@ console.log(statisticsData); // - Objet - 10 blocs
 console.log(countriesData); // - Tableau - 4 éléments
 console.log(factsData); // - Tableau - 10 éléments
 console.log(historicData); // - Tableau - 13 éléments
+
+// Import the THREE.js library
+import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
+
+// To allow for the camera to move around the scene
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+
+// To allow for importing the .gltf file
+import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
+
+//create a Three.js scene
+const scene = new THREE.Scene();
+
+//create a camera with position and angles
+const camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+//Create a control to move arround the object
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+//3D object in a global variable to access it later
+let burger;
+
+//Orbicontrolls to move arround the object
+let controls;
+
+//Object to render
+let objToRender = 'burger';
+
+//Create a loader for the .gltf file
+const loader = new GLTFLoader();
+
+//Load the file 
+loader.load(
+    //path to the file
+    './src/3D/scene.gltf',
+    //callback function
+    function (gltf) {
+        //save the object in the global variable
+        burger = gltf.scene;
+        //add the object to the scene
+        scene.add(burger);
+    },
+    function (xhr) {
+        console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+    },
+    function () {
+        console.log("An error happened");
+    }
+);
+
+//Instantiate the renderer and set his size
+const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha true to make the background transparent
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+//Add the renderer to the DOM
+document.getElementById("container3D").appendChild(renderer.domElement);
+
+//set how far the camera will be from the object
+camera.position.z = objToRender === 'burger' ? 25 : 500;
+
+//Add light to see the model
+// const light = new THREE.DirectionalLight(0xffffff, 1); //Color and intensity
+// light.position.set(500, 500, 500); //Top-left-ish
+// light.castShadow = true; //Enable shadow
+// scene.add(light);
+
+const ambientLight = new THREE.AmbientLight(0xffffff, 1.5); // Couleur blanche avec une intensité de 0.5
+scene.add(ambientLight);
+
+//Create a control to move arround the object
+if (objToRender === 'burger') {
+    controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableZoom = false; // Disable zoom on scroll
+}
+
+//Render the scene
+function animate() {
+    requestAnimationFrame(animate);
+    if (burger) {
+        burger.rotation.y += 0.0025;
+    }
+    renderer.render(scene, camera);
+}
+
+//Add a listener to the window to resize the renderer when the window is resized
+window.addEventListener('resize', function () {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+//Add a listener to the window to move the camera with the mouse
+document.onmousemove = (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+}
+
+//Start 3D rendering
+animate();

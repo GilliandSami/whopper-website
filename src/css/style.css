@@ -23,6 +23,7 @@ body {
     line-height: 1.5; 
     padding: 16px 20px; 
     margin: auto;
+    overflow: hidden scroll;
 }
 
 header,
@@ -63,6 +64,7 @@ img {
     width: 100vw !important;
     height: 100vh !important;
     position: absolute;
+    /* z-index: -100; */
     top: 0;
     left: 0;
 }
