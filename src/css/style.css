@@ -1,0 +1,36 @@
+:root {
+    --primary-color: #FF8731;
+    --dark-primary-color: #512314;
+    --text-icons-color: #F4EBDC;
+    --primary-text-color: #F4EBDC;
+    --spacing-unit: 8px;
+    --border-radius: 4px; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+    line-height: 1.5; 
+    margin-top: var(--spacing-unit); 
+    margin-right: var(--spacing-unit);
+    margin-bottom: var(--spacing-unit);
+    margin-left: var(--spacing-unit);
+    padding: var(--spacing-unit);
+
+}
+
+#container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
