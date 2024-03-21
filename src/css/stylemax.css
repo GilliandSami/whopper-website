@@ -2,20 +2,22 @@
     height: 100vh;
 }
 
-.title{
+/* Définir le titre comme conteneur flex */
+.title {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between; /* Pour espacement égal entre les éléments */
+    height: 100%; /* Pour occuper toute la hauteur de la section parente */
 }
 
+/* Positionner la première image collée en haut du viewport */
 .titre-whopper-intro {
-    display: flex;
-    /* align-self: flex-start; */
-
+    align-self: flex-start;
+    align-self: center;
 }
 
-.titre-whopper-best{
-    display: flex;
-    /* align-self: flex-end; */
-
+/* Positionner la deuxième image collée en bas du viewport */
+.titre-whopper-best {
+    align-self: flex-end;
+    align-self: center;
 }
