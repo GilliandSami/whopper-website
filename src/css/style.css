@@ -7,6 +7,14 @@
     --spacing-unit: 8px;
     --border-radius: 4px;
     --transition-speed: 0.3s;
+
+    --primary-font: "bd-supper", sans-serif;
+    --primary-weight: 400;
+    --primary-style: normal;
+
+    --second-font: "Madimi One", sans-serif;
+    --second-weight: 400;
+    --second-style: normal;
 }
 
 *,
@@ -57,6 +65,8 @@ h5,
 h6 {
     font-weight: bold;
     margin-bottom: var(--spacing-unit);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
 }
 
 img {
@@ -75,4 +85,42 @@ img {
     /* z-index: -100; */
     top: 0;
     left: 0;
+}
+
+
+section.\33 d-section{
+height: 100vh;
+}
+
+section.best_seller-section{
+    height: 100vh;
+}
+
+section.best_seller-section img{
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    width: 150px;
+    margin-top : 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden-bar {
+    display: none;
 }
