@@ -93,6 +93,10 @@ height: 100vh;
 }
 
 section.best_seller-section{
+    height: 200vh;
+}
+
+div.datas-best-selling-menu{
     height: 100vh;
 }
 
@@ -100,22 +104,32 @@ section.best_seller-section img{
     display:flex;
     flex-direction: column;
     height: auto;
-    width: 150px;
+    width: 10vw;
     margin-top : 20px
 }
 
+h1.percentage-whopper
+{
+    font-size: 20vw;
+    text-align: center;
+}
 
+h1.percentage-whopper span
+{
+    font-size: 5vw;
+    position: absolute; 
+    top: 227vh;
+}
 
+div .hand-whopper{
+    width: 25vw;
+    position:absolute;
+    left: 75vw;
+}
 
-
-
-
-
-
-
-
-
-
+img.whopper-face{
+    height: 50vh;
+}
 
 
 
