@@ -17,6 +17,7 @@
     padding: 0;
 }
 
+
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-color);
@@ -62,6 +63,8 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: var(--border-radius);
+    pointer-events: none;
+    -webkit-touch-callout: none;
 }
 
 
