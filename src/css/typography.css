@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url("https://use.typekit.net/pgc1sla.css");
+
+:root {
+    --primary-font: "bd-supper", sans-serif;
+    --primary-weight: 400;
+    --primary-style: normal;
+
+    --second-font: "Madimi One", sans-serif;
+    --second-weight: 400;
+    --second-style: normal;
+}
+
 
 * {
     margin: 0;
-    font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--primary-font);
+    font-weight: var(--primary-weight);
+    font-style: var(--primary-style);
 }
