@@ -1,3 +1,5 @@
+/* BURGER ---------------------------------------------------------------------------------------------------------*/
+
 .\33 d-section {
     height: 100vh;
 }
@@ -7,17 +9,59 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Pour espacement égal entre les éléments */
-    height: 100%; /* Pour occuper toute la hauteur de la section parente */
+    height: 100%; /* Pour occuper toute la hauteur de la section parente */ /* Pour que le titre soit au-dessus des images */
 }
 
 /* Positionner la première image collée en haut du viewport */
 .titre-whopper-intro {
     align-self: flex-start;
     align-self: center;
+    z-index: 1; /* Pour que l'image soit au-dessus du titre */
 }
 
 /* Positionner la deuxième image collée en bas du viewport */
 .titre-whopper-best {
     align-self: flex-end;
     align-self: center;
+    z-index: 1; /* Pour que l'image soit au-dessus du titre */
+    margin-bottom: 20px;
+    height: 30%;
+}
+
+
+/* COMPTEUR ---------------------------------------------------------------------------------------------------------*/
+.compter-section {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 20px 10px 20px; /* Ajoutez un peu de rembourrage pour l'espace autour du contenu */
+    background-color: #502314; /* Choisissez la couleur d'arrière-plan souhaitée */
+    z-index: 100; /* Assurez-vous que le menu est superposé à d'autres éléments */
+    border-bottom-left-radius: 10px; /* Facultatif: ajoutez des coins arrondis au coin inférieur droit */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les éléments à l'intérieur du menu */
+.number-interaction {
+    display: flex; /* Pour aligner les éléments horizontalement */
+    align-self: center; /* Pour aligner les éléments verticalement */
+    margin: 0; /* Supprimez les marges par défaut pour éviter l'espace supplémentaire */
+    font-size: 20px; /* Choisissez la taille de la police souhaitée */
+}
+
+.nbr-burgers-prepared {
+    margin: 0; /* Supprimez les marges par défaut pour éviter l'espace supplémentaire */
+    font-size: 16px; /* Choisissez la taille de la police souhaitée */
+}
+
+/* LOADING SCREEN ------------------------------------------------------------------------------------------------------------------*/
+#preloader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: #fff url(../img/loader.gif) no-repeat center center; /* change the background color to match your design */
+    z-index: 1000; /* make sure it's on top */
+    padding: 0;
 }

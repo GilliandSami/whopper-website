@@ -30,7 +30,7 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-color);
     line-height: 1.5;
-    padding: 16px 20px;
+    /* padding: 16px 20px; */
     margin: auto;
     overflow: hidden scroll;
 }
