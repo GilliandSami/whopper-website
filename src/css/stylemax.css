@@ -1,0 +1,21 @@
+.\33 d-section {
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titre-whopper-intro {
+    display: flex;
+    /* align-self: flex-start; */
+
+}
+
+.titre-whopper-best{
+    display: flex;
+    /* align-self: flex-end; */
+
+}

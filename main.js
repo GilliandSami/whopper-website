@@ -35,6 +35,7 @@ const scene = new THREE.Scene();
 
 //create a camera with position and angles
 const camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.set(0, 12, 0);
 
 //Create a control to move arround the object
 let mouseX = window.innerWidth / 2;
@@ -72,7 +73,7 @@ loader.load(
 );
 
 //Instantiate the renderer and set his size
-const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha true to make the background transparent
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true }); //Alpha true to make the background transparent
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 //Add the renderer to the DOM
@@ -96,6 +97,15 @@ if (objToRender === 'burger') {
     controls.enableZoom = false; // Disable zoom on scroll
 }
 
+// function rotateObject(object, degreeX=0, degreeY=0, degreeZ=0) {
+//     object.rotateX(THREE.Math.degToRad(degreeX));
+//     object.rotateY(THREE.Math.degToRad(degreeY));
+//     object.rotateZ(THREE.Math.degToRad(degreeZ));
+//  }
+ 
+//  // usage:
+//  rotateObject(burger, 40, 30, 20);
+
 //Render the scene
 function animate() {
     requestAnimationFrame(animate);
@@ -104,6 +114,7 @@ function animate() {
     }
     renderer.render(scene, camera);
 }
+
 
 //Add a listener to the window to resize the renderer when the window is resized
 window.addEventListener('resize', function () {
