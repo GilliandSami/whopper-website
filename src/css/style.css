@@ -94,6 +94,10 @@ height: 100vh;
 
 section.best_seller-section{
     height: 200vh;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+
 }
 
 div.datas-best-selling-menu{
@@ -135,6 +139,11 @@ img.whopper-face{
 
 
 
+
+
+
+
 .hidden-bar {
     display: none;
 }
+
