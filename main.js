@@ -233,3 +233,7 @@ function extractFoodPairings(jsonData) {
                 .text(d => d.item);
         });
 }
+
+document.addEventListener('DOMContentLoaded', GenerateLoadFood);
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
