@@ -33,6 +33,7 @@ body {
     /* padding: 16px 20px; */
     margin: auto;
     overflow: hidden scroll;
+    cursor: url('../img/custom.svg'), auto;
 }
 
 header,

@@ -65,3 +65,9 @@
     z-index: 1000; /* make sure it's on top */
     padding: 0;
 }
+
+
+/* cursor ---------------------------------------------------------------------------------------------------------*/
+html, body{
+    cursor: url(../img/Whopper-cursor.png), auto;
+}
