@@ -155,7 +155,10 @@ updateNumber();
 setInterval(updateNumber, 23);
 
 //LOADING SCREEN ----------------------------------------------------------------------------------------------------------------------------
-// var loader = document.querySelector('#preloader');
-// window.addEventListener('load', function () {
-//     loader.style.display = 'none';
-// });
+// Déclarez votre élément de préchargement avec un nom de variable différent
+let preloader = document.querySelector('#preloader');
+window.addEventListener('load', function () {
+    // Utilisez la variable preloader pour masquer l'élément de chargement
+    preloader.style.display = 'none';
+});
+
