@@ -48,15 +48,18 @@
     "food_pairings": [
         {
             "item": "Whopper",
-            "percentage": 40.09
+            "percentage": 40.09,
+            "image": "Whopper.png"
         },
         {
             "item": "Classic Hamburger",
-            "percentage": 14.9
+            "percentage": 14.9,
+            "image": "Hamburger.png"
         },
         {
             "item": "Classic Cheeseburger",
-            "percentage": 9.94
+            "percentage": 9.94,
+            "image": "Cheeseburger.png"
         },
         {
             "item": "Impossible Burger",
@@ -68,11 +71,13 @@
         },
         {
             "item": "Chicken Nuggets",
-            "percentage": 4.91
+            "percentage": 4.91,
+            "image": "ChickenNuggets.png"
         },
         {
             "item": "French Fries",
-            "percentage": 15.09
+            "percentage": 15.09,
+            "image": "Frenchfries.png"
         }
     ],
     "ingredient_demand_increase": [
