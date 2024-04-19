@@ -8,7 +8,9 @@ function extractFoodPairings(jsonData) {
         })
         .map(pairing => ({
             item: pairing.item,
-            percentage: pairing.percentage
+            percentage: pairing.percentage,
+            image: pairing.image || null
+
         }));
 }
 
@@ -20,13 +22,13 @@ function GenerateLoadFood() {
 
             // Configuration initiale de SVG
             const margin = { top: 20, right: 50, bottom: 30, left: 50 },
-                width = 560 - margin.left - margin.right,
-                height = 500 - margin.top - margin.bottom;
+                width = 660 - margin.left - margin.right,
+                height = 600 - margin.top - margin.bottom;
 
             // Création et insertion de SVG dans .graph-percentage-menus
             const svg = d3.select(".graph-percentage-menus")
                 .append("svg")
-                .attr("width", width + margin.left + margin.right + 1000)
+                .attr("width", width + margin.left + margin.right + 600)
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
                 .attr("transform", `translate(${margin.left}, ${margin.top})`);
@@ -38,7 +40,7 @@ function GenerateLoadFood() {
                 .domain(foodData.map(d => d.item));
 
             const x = d3.scaleLinear()
-                .range([0, width])
+                .range([0, width * 0.8])
                 .domain([0, d3.max(foodData, d => d.percentage)]);
 
             // Ajout des barres
@@ -57,40 +59,49 @@ function GenerateLoadFood() {
                 .data(foodData)
                 .enter().append("text")
                 .attr("class", "label")
-                .attr("x", d => x(d.percentage) + 5)
+                .attr("x", d => x(d.percentage) + 10)
+                .attr("font-size", "18px") // Augmentez la taille du texte ici
                 .attr("y", d => y(d.item) + y.bandwidth() / 2)
                 .attr("dy", ".35em")
                 .text(d => `${Math.round(d.percentage)}%`); 
                 
-            svg.selectAll(".food-name")
+            svg.selectAll(".food-image")
+                .data(foodData)
+                .enter().append("image")
+                .attr("xlink:href", d => `../src/img/${d.image}`)  
+                .attr("x", width + margin.right + 400)
+                .attr("y", d => y(d.item)+ -10)
+                .attr("width", 150 )  // Largeur de l'image
+                .attr("height", 150);  // Hauteur de l'image correspondant à la hauteur de la barre
+
+                svg.selectAll(".food-name")
                 .data(foodData)
                 .enter().append("text")
                 .attr("class", "food-name")
-                .attr("x", + 900)
-                .attr("y", d => y(d.item) + y.bandwidth() / 2 + (y.paddingInner() * y.step() / 2)) // Centre le texte verticalement avec le padding
-                .attr("dy", "0.35em")
+                .attr("font-size", "24px") // Ajustez la taille de la police ici selon vos besoins
                 .attr("text-anchor", "end")
-                .each(function (d) {
-                    var text = d3.select(this),
-                        words = d.item.split(/\s+/), // Séparation du texte en mots
-                        n = words.length; // Nombre de mots
-                    text.text(''); // Efface le texte existant
-                    
-                    // Ajoute le premier mot ou les premiers mots si le texte a plus d'un mot
+                .attr("x", 1000) // Position en x pour le texte
+                .attr("y", d => y(d.item) + y.bandwidth() / 2 +10) // Alignement vertical au milieu de la bande
+                .each(function(d) {
+                    var text = d3.select(this);
+                    var words = d.item.toUpperCase().split(/\s+/); // Convertit le texte en majuscules et sépare les mots
+                    // Ajoutez le premier mot
                     text.append("tspan")
-                        .attr("x", 750) // Doit correspondre à l'attribut x du texte parent
-                        .attr("dy", n > 1 ? "-0.7em" : "0em") // Ajuste la position verticale du premier tspan
+                        .attr("x", 900)
+                        .attr("dy", "-0.6em") // Déplacement vers le haut pour aligner les tspans
                         .text(words[0]);
-            
-                    // Ajoute le deuxième mot dans un nouveau tspan si le texte a plus d'un mot
-                    if (n > 1) {
+                    
+                    // Ajoutez le deuxième mot, si présent
+                    if (words.length > 1) {
                         text.append("tspan")
-                            .attr("x", 750) // Doit correspondre à l'attribut x du texte parent
-                            .attr("dy", "1.4em") // Ajuste la position verticale du deuxième tspan
-                            .attr("dx", "0em") // Ajuste la position horizontale du deuxième tspan si nécessaire
-                            .text(words[1]);
-                    } 
-        });
+                            .attr("x", 900)
+                            .attr("dy", "1.2em") // Positionnement du deuxième tspan directement sous le premier
+                            .text(words.slice(1).join(" ")); // Rejoignez le reste des mots au cas où il y a plus de deux
+                    }
+                });
+            
+
+            
     });
 }
 

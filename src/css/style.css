@@ -78,6 +78,15 @@ img {
     -webkit-touch-callout: none;
 }
 
+section{
+    margin-bottom: 20vh;
+
+}
+
+#part2-best-seller{
+    height: 100vh;
+    margin-bottom: 500px;
+}
 
 #container3D canvas {
     width: 100vw !important;
@@ -88,16 +97,21 @@ img {
     left: 0;
 }
 
+/* Section 3D */
 
 section.\33 d-section {
     height: 100vh;
 }
+
+/* Best seller section viewport */
 
 section.best_seller-section {
     height: 200vh;
     margin: auto;
     padding-left: 10%;
     padding-right: 10%;
+    line-height: 1;
+
 }
 
 .label {
@@ -105,9 +119,15 @@ section.best_seller-section {
     fill: var(--light-primary-color);
 }
 
+<<<<<<< HEAD
 .food-name {
     font-size: 30px;
     font-family: var(--second-font);
+=======
+.food-name{
+    font-size:37px;
+    font-family:  var(--second-font);
+>>>>>>> e32ce0051a6ea0de79288b01f422c70893a3d16e
     fill: var(--light-primary-color);
 
 }
@@ -121,20 +141,43 @@ div.datas-best-selling-menu {
 section.best_seller-section img {
     display: flex;
     flex-direction: column;
-    height: auto;
-    width: 10vw;
-    margin-top: 20px
 }
 
 h1.percentage-whopper {
     font-size: 20vw;
     text-align: center;
+    position: absolute;
+    left: 75vh;
+    top: 215vh;
 }
 
-h1.percentage-whopper span {
+img.whopper-face {
+    top: 223vh;
+    height: 70vh;
+    position: absolute;
+    left: 55vh;
+}
+
+h1.percentage{
     font-size: 5vw;
     position: absolute;
-    top: 227vh;
+    top: 217vh;
+    left: 130vh;
+}
+
+h1.whopper-descriptif {
+    font-size: 5vw;
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    top: 290vh;
+    left: 65vh;
+
+
+}
+
+h1.impact-sales{
+    font-size: 30px;
 }
 
 div .hand-whopper {
@@ -143,9 +186,6 @@ div .hand-whopper {
     left: 75vw;
 }
 
-img.whopper-face {
-    height: 50vh;
-}
 
 /*  Troisième ViewPort - Style - Ingredients --------------------------------------------------------  */
 
