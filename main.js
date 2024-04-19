@@ -2,6 +2,7 @@ import { make3DBurger } from "./3d-viewport.js";
 import { countBurgers } from './burgers-count.js';
 import { GenerateLoadFood, extractFoodPairings } from './best-seller-viewport.js';
 import { generateIngredientsList } from "./ingredients-viewport.js";
+import { initializeDashboard } from "./dashboard-viewport.js";
 
 // 0.1 - Chargement des fichiers JSON & CSV
 
@@ -47,8 +48,9 @@ generateIngredientsList();
 
 // Quatrième ViewPort - Pays ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// ...
+document.addEventListener('DOMContentLoaded', () => {
+    initializeDashboard();
+});
 
 // Cinquième ViewPort - Dashboard ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// ...
