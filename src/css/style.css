@@ -89,11 +89,11 @@ img {
 }
 
 
-section.\33 d-section{
-height: 100vh;
+section.\33 d-section {
+    height: 100vh;
 }
 
-section.best_seller-section{
+section.best_seller-section {
     height: 200vh;
     margin: auto;
     padding-left: 10%;
@@ -101,50 +101,136 @@ section.best_seller-section{
 
 }
 
-div.datas-best-selling-menu{
+div.datas-best-selling-menu {
     height: 100vh;
 }
 
-section.best_seller-section img{
-    display:flex;
+section.best_seller-section img {
+    display: flex;
     flex-direction: column;
     height: auto;
     width: 10vw;
-    margin-top : 20px
+    margin-top: 20px
 }
 
-h1.percentage-whopper
-{
+h1.percentage-whopper {
     font-size: 20vw;
     text-align: center;
 }
 
-h1.percentage-whopper span
-{
+h1.percentage-whopper span {
     font-size: 5vw;
-    position: absolute; 
+    position: absolute;
     top: 227vh;
 }
 
-div .hand-whopper{
+div .hand-whopper {
     width: 25vw;
-    position:absolute;
+    position: absolute;
     left: 75vw;
 }
 
-img.whopper-face{
+img.whopper-face {
     height: 50vh;
 }
 
+/*  Troisième ViewPort - Style - Ingredients --------------------------------------------------------  */
 
+.ingredients-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.titre-ingredients {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
 
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.ingredient {
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 45%;
+    /* Prend 45% de la largeur pour permettre deux éléments par ligne avec de l'espace entre */
+    position: relative;
+    /* Pour la position absolue des kcal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.ingredient img {
+    width: 80px;
+    /* taille de l'image à ajuster selon le besoin */
+    height: 80px;
+    /* même taille que la largeur pour garder l'aspect ratio */
+    border-radius: 50%;
+    /* pour les rendre rondes */
+    background-color: #fff;
+    /* fond blanc pour les images */
+}
 
+.ingredient img:after {
+    content: '-';
+    /* Contenu vide pour une pseudo-élément */
+    display: block;
+    height: 3px;
+    /* Hauteur de la ligne */
+    width: 100%;
+    /* Largeur de la ligne correspond à celle de l'image */
+    background-color: #fff;
+    /* Couleur de la ligne */
+    bottom: -6px;
+    /* Position sous l'image */
+    left: 0;
+}
+
+.ingredient-name {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    margin-top: 5px;
+}
+
+.ingredient-kcal {
+    display: block;
+    color: #333;
+    right: 0;
+    position: absolute;
+    bottom: 10px;
+    padding: 0 5px;
+}
+
+.total-kcal {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-kcal {
+    margin-right: 10px;
+}
+
+.hand-whopper {
+    width: 100px;
+}
+
+/* -------------------------------------------------------- */
 
 
 .hidden-bar {
     display: none;
 }
-
