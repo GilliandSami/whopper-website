@@ -98,8 +98,21 @@ section.best_seller-section{
     margin: auto;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.label{
+    font-size: 4vw;
+    fill: var(--light-primary-color);
+}
+
+.food-name{
+    font-size:30px;
+    font-family:  var(--second-font);
+    fill: var(--light-primary-color);
 
 }
+ 
+
 
 div.datas-best-selling-menu{
     height: 100vh;
