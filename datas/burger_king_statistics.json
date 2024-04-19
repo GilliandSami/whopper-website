@@ -99,28 +99,39 @@
     ],
     "ingredients_kcal": [
         {
-            "ingredient": "Onion",
-            "calories": 16
+            "ingredient": "Oignons",
+            "calories": 16,
+            "image": "oignons.png"
         },
         {
-            "ingredient": "Steak",
-            "calories": 204
+            "ingredient": "Steak hache",
+            "calories": 204,
+            "image": "steak.png"
         },
         {
             "ingredient": "Salade",
-            "calories": 8
+            "calories": 8,
+            "image": "salade.png"
         },
         {
             "ingredient": "Mayonnaise",
-            "calories": 106
+            "calories": 106,
+            "image": "mayonnaise.png"
         },
         {
-            "ingredient": "Cornichon",
-            "calories": 14
+            "ingredient": "Cornichons",
+            "calories": 14,
+            "image": "cornichons.png"
         },
         {
             "ingredient": "Tomates",
-            "calories": 32
+            "calories": 32,
+            "image": "tomates.png"
+        },
+        {
+            "ingredient": "Pain",
+            "calories": 260,
+            "image": "pain.jpg"
         }
     ],
     "by_outlets": {
