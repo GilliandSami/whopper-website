@@ -119,15 +119,9 @@ section.best_seller-section {
     fill: var(--light-primary-color);
 }
 
-<<<<<<< HEAD
 .food-name {
     font-size: 30px;
     font-family: var(--second-font);
-=======
-.food-name{
-    font-size:37px;
-    font-family:  var(--second-font);
->>>>>>> e32ce0051a6ea0de79288b01f422c70893a3d16e
     fill: var(--light-primary-color);
 
 }
@@ -142,6 +136,12 @@ section.best_seller-section img {
     display: flex;
     flex-direction: column;
 }
+
+.line-chart-svg {
+position: absolute;
+}
+
+
 
 h1.percentage-whopper {
     font-size: 20vw;
