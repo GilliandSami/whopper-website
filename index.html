@@ -41,23 +41,26 @@
             </div>
         </div>
         <div id="part2-best-seller">
-        <h1 class="percentage-whopper"> 40</h1>
-        <h1 class="percentage">%</h1>
-        <img class="whopper-face" src="src/img/Whopper.png" alt="Image du Whopper vu de face">
-        <h1 class="whopper-descriptif">A lui tout seul</h1>
-    </div>
+            <h1 class="percentage-whopper"> 40</h1>
+            <h1 class="percentage">%</h1>
+            <img class="whopper-face" src="src/img/Whopper.png" alt="Image du Whopper vu de face">
+            <h1 class="whopper-descriptif">A lui tout seul</h1>
+        </div>
     </section>
 
     <section class="ingredients-section">
         <h2 class="titre-ingredients">7 Ingrédients</h2>
 
         <div class="ingredients-list">
+            <div class="tooltip" style="visibility: hidden;"></div>
             <!-- Code du graphe - 7 ingrédients-->
         </div>
 
         <div class="total-kcal">
-            <h2 class="titre-total">Total</h2>
-            <h3 class="calories-total">640 Kcal</h3>
+            <div class="total-nbr">
+                <h2 class="titre-total">Total</h2>
+                <h3 class="calories-total">640 Kcal</h3>
+            </div>
             <img class="hand-whopper" src="src/img/Whopper-2.png"
                 alt="Image du Whopper tenu à la main par une personne">
         </div>
@@ -115,15 +118,19 @@
     <footer class="dashboard-section">
         <h2>Tableau de bord du Whopper</h2>
 
-        <div class="datas-prepared_whopper">WHOPPERS PRÉPARÉS<br><span class="number">0</span></div>
-        <div class="datas-timer">TIMER<br><span class="time">0min 00s</span></div>
-        <div class="datas-tomatos">TOMATES<br><span class="number">0</span></div>
-        <div class="datas-salads">SALADES<br><span class="number">0</span></div>
-        <div class="datas-onions">OIGNONS<br><span class="number">0</span></div>
-        <div class="datas-pickles">CORNICHONS<br><span class="number">0</span></div>
+        <div class="first-row">
+            <div class="datas-prepared_whopper data-block">WHOPPERS PRÉPARÉS<br><span class="number">0</span></div>
+            <div class="datas-timer data-block">TIMER<br><span class="time">0min 00s</span></div>
+        </div>
+        <div class="second-row">
+            <div class="datas-tomatos data-block">TOMATES<br><span class="number">0</span></div>
+            <div class="datas-salads data-block">SALADES<br><span class="number">0</span></div>
+            <div class="datas-onions data-block">OIGNONS<br><span class="number">0</span></div>
+            <div class="datas-pickles data-block">CORNICHONS<br><span class="number">0</span></div>
+        </div>
     </footer>
 
-    <p>Projet réalisé par Gilliand Sami | Peretti Maxime | Winterhalter Léo</p>
+    <p class="congratulations-guys">Projet réalisé par Gilliand Sami | Peretti Maxime | Winterhalter Léo</p>
 
     <script type="module" src="main.js"></script>
 </body>
