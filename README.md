@@ -46,24 +46,6 @@ Les données ont été collectées et mises à disposition par divers contribute
             "item": "Classic Cheeseburger",
             "percentage": 9.94,
             "image": "Cheeseburger.png"
-        },
-        {
-            "item": "Impossible Burger",
-            "percentage": 3.99
-        },
-        {
-            "item": "Sandwich",
-            "percentage": 2.08
-        },
-        {
-            "item": "Chicken Nuggets",
-            "percentage": 4.91,
-            "image": "ChickenNuggets.png"
-        },
-        {
-            "item": "French Fries",
-            "percentage": 15.09,
-            "image": "Frenchfries.png"
         }
     ]
 }
