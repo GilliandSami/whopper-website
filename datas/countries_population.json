@@ -2,22 +2,25 @@
     {
         "name": "Danemark",
         "population": 5854240,
-        "whopper-per-person": 1
+        "whopper-per-person": 1,
+        "svg": "../src/svg/pays-danemark.svg"
     },
     {
         "name": "Qatar",
         "population": 2688235,
-        "whopper-per-person": 2
+        "whopper-per-person": 2,
+        "svg": "../src/svg/pays-quatar2.svg"
     },
     {
         "name": "Luxembourg",
         "population": 639321,
-        "whopper-per-person": 10
+        "whopper-per-person": 10,
+        "svg": "../src/svg/pays-luxembourg.svg"
     },
     {
         "name": "Liechtenstein",
         "population": 39039,
-        "whopper-per-person": 165
+        "whopper-per-person": 165,
+        "svg": "../src/svg/pays-liechstenstein.svg"
         }
-
 ]
