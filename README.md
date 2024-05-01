@@ -1,5 +1,12 @@
 # 🍔 - Visualisation de Données sur le Whopper de Burger King
 
+## Table des Matières
+- [Contexte](#contexte--)
+- [Description des Données](#description-des-données--)
+- [But du Projet](#but-du-projet--)
+- [Références](#références--)
+- [Wireframe & Maquette](#wireframe--maquette--)
+
 ## Contexte - 🌐
 
 Ce projet s'appuie sur plusieurs ensembles de données concernant Burger King, plus spécifiquement sur son produit phare : le Whopper. 
