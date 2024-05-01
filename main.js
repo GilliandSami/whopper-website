@@ -3,6 +3,7 @@ import { countBurgers } from './burgers-count.js';
 import { GenerateLoadFood, extractFoodPairings } from './best-seller-viewport.js';
 import { generateIngredientsList } from "./ingredients-viewport.js";
 import { initializeDashboard } from "./dashboard-viewport.js";
+import { drawPoints } from "./countries-viewport.js";
 
 // 0.1 - Chargement des fichiers JSON & CSV
 
@@ -48,9 +49,10 @@ generateIngredientsList();
 
 // Quatrième ViewPort - Pays ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-document.addEventListener('DOMContentLoaded', () => {
-    initializeDashboard();
-});
+drawPoints();
 
 // Cinquième ViewPort - Dashboard ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+document.addEventListener('DOMContentLoaded', () => {
+    initializeDashboard();
+});
