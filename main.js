@@ -1,7 +1,8 @@
 import { make3DBurger } from "./3d-viewport.js";
 import { countBurgers } from './burgers-count.js';
 import { GenerateLoadFood, extractFoodPairings } from './best-seller-viewport.js';
-import { generateIngredientsList } from "./ingredients-viewport.js";
+// import { generateIngredientsList } from "./ingredients-viewport.js";
+import { generateIngredientsBubbleChart } from "./ingredients-viewport.js";
 import { initializeDashboard } from "./dashboard-viewport.js";
 import { drawPoints } from "./countries-viewport.js";
 
@@ -45,7 +46,8 @@ GenerateLoadFood();
 
 // Troisième ViewPort - Ingrédients ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-generateIngredientsList();
+// generateIngredientsList();
+generateIngredientsBubbleChart();
 
 // Quatrième ViewPort - Pays ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
