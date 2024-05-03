@@ -27,7 +27,11 @@ export function drawPoints() {
                     .data(countriesData)
                     .enter()
                     .append("g")
+<<<<<<< HEAD
                     .attr("transform", ((d, i) => `translate(250, ${i*500+90})`));
+=======
+                    .attr("transform", ((d, i) => `translate(250, ${i*550+90})`));
+>>>>>>> refs/remotes/origin/main
 
     // Fonction pour créer les points pour chaque pays
     function createPoints(group, d) {
@@ -48,6 +52,25 @@ export function drawPoints() {
         createPoints(d3.select(this), d);
     });
 
+<<<<<<< HEAD
+=======
+// Créer une échelle pour mapper le nombre de points à une taille de police
+var fontSizeScale = d3.scaleLinear()
+    .domain([0, d3.max(countriesData, d => d['whopper-per-person'])])
+    .range([10, 20]); // Taille de police minimale et maximale souhaitée
+
+// Ajouter du texte à chaque groupe de données avec une taille de police dynamique
+groups.append("text")
+    .attr("x", 0) // Ajustez la position horizontale du texte
+    .attr("y", -50) // Ajustez la position verticale du texte
+    .attr("font-size", d => fontSizeScale(d['whopper-per-person'])*5) // Taille de police dynamique
+    .attr("fill", "#F4EBDC") // Couleur du texte
+    .attr("font-weight", "bold")
+    .attr("font-family", "var(--primary-font);")
+    .text(d => d.rapport); // Contenu texte basé sur les données de votre JSON
+
+
+>>>>>>> refs/remotes/origin/main
     // Ajouter le texte et l'image pour chaque pays
     groups.append("image")
       .attr("href", d => d.populationSvg)
