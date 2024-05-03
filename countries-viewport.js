@@ -36,7 +36,6 @@ export function drawPoints() {
             const xPos = (i % pointsPerLine) * 50; // Espace de 20 pixels entre les points
             const yPos = (Math.floor(i / pointsPerLine) * 50) + yScale.bandwidth() / 2;
             group.append("circle")
-<<<<<<< HEAD
                  .attr("cx", xPos)
                  .attr("cy", yPos)
                  .attr("r", 15) // Rayon des cercles
@@ -46,17 +45,6 @@ export function drawPoints() {
 
     // Créer les points pour chaque groupe
     groups.each(function(d) {
-=======
-                .attr("cx", xOffset) // Position sur l'axe x basée sur l'itération et l'index de ligne
-                .attr("cy", lineHeight * lineIndex + lineHeight / 2) // Position verticalement basée sur l'index de ligne
-                .attr("r", 5) // Rayon du cercle
-                .attr("fill", "white"); // Couleur du cercle
-        }
-    }
-
-    // Ajout de points pour chaque pays
-    groups.each(function (d) {
->>>>>>> e84bea141b23323c64b3a768bb2439d6d68fede1
         createPoints(d3.select(this), d);
     });
 
