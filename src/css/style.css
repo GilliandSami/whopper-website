@@ -176,6 +176,15 @@ h1.impact-sales {
 }
 
 /* Troisième Viewport - Style - Ingrédients  */
+@keyframes slideInFromRight {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 68%;
+    }
+}
 
 .titre-ingredients {
     font-size: 10rem;
@@ -212,6 +221,12 @@ h1.impact-sales {
     flex-direction: column;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.calories-total span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--dark-primary-color);
 }
 
 .total-nbr * {

@@ -1,5 +1,5 @@
 import { make3DBurger } from "./3d-viewport.js";
-import { countBurgers, setupCounterAnimation } from './burgers-count.js';
+import { countBurgers, setupCounterAnimation, setupCaloriesAnimation, setupHandWhopperAnimation } from './burgers-count.js';
 import { GenerateLoadFood, extractFoodPairings } from './best-seller-viewport.js';
 // import { generateIngredientsList } from "./ingredients-viewport.js";
 import { generateIngredientsBubbleChart } from "./ingredients-viewport.js";
@@ -40,6 +40,8 @@ make3DBurger();
 
 countBurgers();
 document.addEventListener('DOMContentLoaded', setupCounterAnimation);
+document.addEventListener('DOMContentLoaded', setupCaloriesAnimation);
+document.addEventListener('DOMContentLoaded', setupHandWhopperAnimation);
 
 // Second Viewport - Best Seller Section -----------------------------------------------------------------------------------------------------------
 
