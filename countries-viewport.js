@@ -9,7 +9,7 @@ export function drawPoints() {
 
     // Définissez les dimensions du SVG
     svg.attr("width", 2000)
-       .attr("height", 900);
+       .attr("height", 2100);
 
     // Création d'une échelle pour positionner les points horizontalement
     var xScale = d3.scaleLinear()
@@ -18,7 +18,7 @@ export function drawPoints() {
 
     // Création d'une échelle pour positionner les pays verticalement
     var yScale = d3.scaleBand()
-                   .domain(countriesData.map(d => d.name))
+                   .domain(countriesData.map(d => d.populationSvg))
                    .range([0, 600])
                    .padding(0.1);
 
@@ -27,7 +27,7 @@ export function drawPoints() {
                     .data(countriesData)
                     .enter()
                     .append("g")
-                    .attr("transform", d => `translate(250, ${yScale(d.name)})`);
+                    .attr("transform", (d, i) => `translate(250, ${i * 500})`);
 
     // Fonction pour créer les points pour chaque pays
     function createPoints(group, d) {
@@ -49,12 +49,12 @@ export function drawPoints() {
     });
 
     // Ajouter le texte et l'image pour chaque pays
-    groups.append("text")
-          .attr("x", 0)
-          .attr("y", 15)
-          .attr("dy", "0.35em") // Centrer verticalement le texte
-          .attr("font-size", "50px") // Taille de la police du texte
-          .text(d => `${d.name}`);
+    groups.append("image")
+      .attr("href", d => d.populationSvg)
+      .attr("x", 0)
+      .attr("y", -150)
+      .attr("width", 300)
+      .attr("height", 300);
 
     groups.append("image")
           .attr("xlink:href", d => d.svg)
