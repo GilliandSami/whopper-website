@@ -36,14 +36,14 @@ export function drawPoints() {
             const xOffset = (i % pointsPerLine) * 30; // Augmentation de l'espacement entre les points
             group.append("circle")
                 .attr("cx", xOffset) // Position sur l'axe x basée sur l'itération et l'index de ligne
-                .attr("cy", lineHeight * lineIndex + lineHeight /2) // Position verticalement basée sur l'index de ligne
+                .attr("cy", lineHeight * lineIndex + lineHeight / 2) // Position verticalement basée sur l'index de ligne
                 .attr("r", 5) // Rayon du cercle
                 .attr("fill", "white"); // Couleur du cercle
         }
     }
 
     // Ajout de points pour chaque pays
-    groups.each(function(d) {
+    groups.each(function (d) {
         createPoints(d3.select(this), d);
     });
 

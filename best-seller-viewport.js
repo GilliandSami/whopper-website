@@ -17,12 +17,14 @@ function drawScrollLine() {
     const impactElement = document.querySelector('.impact-sales');
 
     const height = 1000;
+    const circleRadius = 30;
 
     if (svgContainer.empty()) {
         svgContainer = section.append('svg')
-            .attr('width', '100%')
+            .attr('width', '130%')
             .attr('height', height * 1)
-            .attr('class', 'line-chart-svg');
+            .attr('class', 'line-chart-svg')
+            .style('overflow', 'visible');
     }
 
     const line = svgContainer.append('line')
@@ -31,7 +33,7 @@ function drawScrollLine() {
         .attr('x2', 0)
         .attr('y2', height)
         .attr('stroke', getComputedStyle(document.documentElement).getPropertyValue('--text-icons-color'))
-        .attr('stroke-width', 10)
+        .attr('stroke-width', 5)
         .attr('stroke-dasharray', height)
         .attr('stroke-dashoffset', height);
 
@@ -49,7 +51,6 @@ function drawScrollLine() {
             window.removeEventListener('scroll', updateLine);                // Ajouter un cercle seulement s'il n'existe pas déjà
             const circle = svgContainer.append('circle')
                 .attr('cx', 0)  // Coordonnée x du centre du cercle
-                .style('position', "absolute")
                 .attr('cy', 1000)  // Coordonnée y du centre du cercle
                 .attr('r', 0.5)  // Commencez avec un rayon de 0 pour être invisible
                 .attr('fill', getComputedStyle(document.documentElement).getPropertyValue('--text-icons-color'));  // Couleur du cercle
@@ -57,10 +58,9 @@ function drawScrollLine() {
             // Animer le cercle pour agrandir de 0 à une taille spécifique
             circle.transition()
                 .duration(1000)  // Durée de l'animation
-                .attr('r', 30);  // Rayon final du cercle
+                .attr('r', circleRadius);  // Rayon final du cercle
         }
     }
-
 
     window.addEventListener('scroll', updateLine);
 }

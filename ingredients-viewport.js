@@ -32,8 +32,9 @@ function generateIngredientsBubbleChart() {
                 .transition()
                 .duration(200)
                 .attr('transform', 'scale(1.1)')
-                .attr('r', d.r);
-            tooltip.html(`<strong>${d.data.ingredient.toUpperCase()}</strong><br>Calories: ${d.data.calories}`)
+                .attr('r', d.r)
+                .style('opacity', 1);
+            tooltip.html(`<strong>${d.data.ingredient.toUpperCase()}</strong><br>Calories: ${d.data.calories} KCal`)
                 .style('visibility', 'visible')
                 .style('left', (event.pageX + 10) + 'px')
                 .style('top', (event.pageY + 10) + 'px')
@@ -49,7 +50,8 @@ function generateIngredientsBubbleChart() {
                 .transition()
                 .duration(200)
                 .attr('transform', null)
-                .attr('r', d => d.r);
+                .attr('r', d => d.r)
+                .style('opacity', 0.5);;
             tooltip.transition()
                 .duration(500)
                 .style('opacity', 0)
@@ -75,7 +77,8 @@ function generateIngredientsBubbleChart() {
         .attr('height', d => 2 * d.r)
         .attr('width', d => 2 * d.r)
         .attr('clip-path', d => `circle(${d.r}px at ${d.r}px ${d.r}px)`)
-        .attr('preserveAspectRatio', 'xMidYMid slice');
+        .attr('preserveAspectRatio', 'xMidYMid slice')
+        .style('opacity', 0.5);
 
     node.append('text')
         .attr('dy', '0.3em')
