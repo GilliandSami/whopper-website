@@ -8,7 +8,7 @@ export function drawPoints() {
                  : d3.select(".point-chart-svg");
 
     // Définissez les dimensions du SVG
-    svg.attr("width", 900)
+    svg.attr("width", 2000)
        .attr("height", 900);
 
     // Création d'une échelle pour positionner les points horizontalement
@@ -27,7 +27,7 @@ export function drawPoints() {
                     .data(countriesData)
                     .enter()
                     .append("g")
-                    .attr("transform", d => `translate(0, ${yScale(d.name)})`);
+                    .attr("transform", d => `translate(250, ${yScale(d.name)})`);
 
     // Fonction pour créer les points pour chaque pays
     function createPoints(group, d) {
@@ -36,42 +36,30 @@ export function drawPoints() {
             const xPos = (i % pointsPerLine) * 50; // Espace de 20 pixels entre les points
             const yPos = (Math.floor(i / pointsPerLine) * 50) + yScale.bandwidth() / 2;
             group.append("circle")
-<<<<<<< HEAD
                  .attr("cx", xPos)
                  .attr("cy", yPos)
                  .attr("r", 15) // Rayon des cercles
-                 .attr("fill", "white");
+                 .attr("fill", "#F4EBDC");
         }
     }
 
     // Créer les points pour chaque groupe
     groups.each(function(d) {
-=======
-                .attr("cx", xOffset) // Position sur l'axe x basée sur l'itération et l'index de ligne
-                .attr("cy", lineHeight * lineIndex + lineHeight / 2) // Position verticalement basée sur l'index de ligne
-                .attr("r", 5) // Rayon du cercle
-                .attr("fill", "white"); // Couleur du cercle
-        }
-    }
-
-    // Ajout de points pour chaque pays
-    groups.each(function (d) {
->>>>>>> e84bea141b23323c64b3a768bb2439d6d68fede1
         createPoints(d3.select(this), d);
     });
 
     // Ajouter le texte et l'image pour chaque pays
     groups.append("text")
           .attr("x", 0)
-          .attr("y", d => yScale.bandwidth() / 2)
+          .attr("y", 15)
           .attr("dy", "0.35em") // Centrer verticalement le texte
-          .attr("font-size", "10px") // Taille de la police du texte
+          .attr("font-size", "50px") // Taille de la police du texte
           .text(d => `${d.name}`);
 
     groups.append("image")
           .attr("xlink:href", d => d.svg)
-          .attr("x", 0)
-          .attr("y", 0)
-          .attr("width", 50)
-          .attr("height", 50);
+          .attr("x", 700)
+          .attr("y", -10)
+          .attr("width", 100)
+          .attr("height", 100);
 }
