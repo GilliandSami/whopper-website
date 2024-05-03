@@ -1,24 +1,28 @@
 [
     {
         "name": "Danemark",
+        "populationSvg": "../src/svg/population-danemark.svg",
         "population": 5854240,
         "whopper-per-person": 1,
         "svg": "../src/svg/pays-danemark.svg"
     },
     {
         "name": "Qatar",
+        "populationSvg": "../src/svg/population-quatar.svg",
         "population": 2688235,
         "whopper-per-person": 2,
         "svg": "../src/svg/pays-quatar2.svg"
     },
     {
         "name": "Luxembourg",
+        "populationSvg": "../src/svg/population-luxembourg.svg",
         "population": 639321,
         "whopper-per-person": 10,
         "svg": "../src/svg/pays-luxembourg.svg"
     },
     {
         "name": "Liechtenstein",
+        "populationSvg": "../src/svg/population-liechstenstein.svg",
         "population": 39039,
         "whopper-per-person": 165,
         "svg": "../src/svg/pays-liechstenstein.svg"
