@@ -39,5 +39,36 @@ function setupCounterAnimation() {
     observer.observe(target);
 }
 
+function setupCaloriesAnimation() {
+    const target = document.querySelector('#calorie-count'); // cibler seulement le span
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(target, 0, 640, 1500);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.5 // déclenche l'animation lorsque 50% de l'élément est visible
+    });
+    observer.observe(target);
+}
 
-export { countBurgers, setupCounterAnimation };
+function setupHandWhopperAnimation() {
+    const handWhopper = document.querySelector('.hand-whopper');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'slideInFromRight 1s ease-out forwards';
+                observer.unobserve(entry.target); // Arrête l'observation après que l'animation se soit déclenchée
+            }
+        });
+    }, {
+        threshold: 0.2 // L'animation se déclenche lorsque 50% de l'image est visible
+    });
+
+    observer.observe(handWhopper);
+}
+
+
+export { countBurgers, setupCounterAnimation, setupCaloriesAnimation, setupHandWhopperAnimation };
