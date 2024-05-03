@@ -9,11 +9,11 @@ export function drawPoints() {
 
     // Définissez les dimensions du SVG
     svg.attr("width", 2000)
-       .attr("height", 2100);
+       .attr("height", 2200);
 
     // Création d'une échelle pour positionner les points horizontalement
     var xScale = d3.scaleLinear()
-                   .domain([0, d3.max(countriesData, d => d['whopper-per-person'])])
+                   .domain([0   , d3.max(countriesData, d => d['whopper-per-person'])])
                    .range([0, 800]);
 
     // Création d'une échelle pour positionner les pays verticalement
@@ -27,14 +27,14 @@ export function drawPoints() {
                     .data(countriesData)
                     .enter()
                     .append("g")
-                    .attr("transform", (d, i) => `translate(250, ${i * 500})`);
+                    .attr("transform", ((d, i) => `translate(250, ${i*500+90})`));
 
     // Fonction pour créer les points pour chaque pays
     function createPoints(group, d) {
         const pointsPerLine = 17; // Nombre de points par ligne
         for (let i = 0; i < d['whopper-per-person']; i++) {
             const xPos = (i % pointsPerLine) * 50; // Espace de 20 pixels entre les points
-            const yPos = (Math.floor(i / pointsPerLine) * 50) + yScale.bandwidth() / 2;
+            const yPos = (Math.floor(i / pointsPerLine) * 50) + yScale.bandwidth() / 1.4;
             group.append("circle")
                  .attr("cx", xPos)
                  .attr("cy", yPos)
@@ -58,8 +58,8 @@ export function drawPoints() {
 
     groups.append("image")
           .attr("xlink:href", d => d.svg)
-          .attr("x", 700)
-          .attr("y", -10)
-          .attr("width", 100)
-          .attr("height", 100);
+          .attr("x", 850)
+          .attr("y", -100)
+          .attr("width", 300)
+          .attr("height", 300);
 }
