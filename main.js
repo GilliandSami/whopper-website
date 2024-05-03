@@ -59,3 +59,26 @@ drawPoints();
 document.addEventListener('DOMContentLoaded', () => {
     initializeDashboard();
 });
+
+// Jukebox tutututu------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// var stream_url_mp3 = "";
+// var stream_url_ogg = "";
+// var stream_total_time = 100;
+// var stream_start_time = Math.floor(Math.random() * stream_total_time);
+// var daJukebox = document.createElement('audio');
+
+// if (daJukebox.canPlayType) {
+
+//     if ("" != daJukebox.canPlayType('audio/mpeg')) {
+//         daJukebox.src = stream_url_mp3;
+//     } else if ("" != myAudio.canPlayType('audio/ogg; codecs="vorbis"')) {
+//         daJukebox.src = stream_url_ogg;
+//     }
+
+//     daJukebox.preload = true;
+//     daJukebox.autobuffer = true;
+//     daJukebox.pause();
+//     daJukebox.currentTime = stream_start_time;
+//     daJukebox.play();
+// }
