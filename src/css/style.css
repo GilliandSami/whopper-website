@@ -25,7 +25,6 @@
     padding: 0;
 }
 
-
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-color);
@@ -125,8 +124,6 @@ section.best_seller-section {
     fill: var(--light-primary-color);
 }
 
-
-
 div.datas-best-selling-menu {
     height: 100vh;
 }
@@ -137,10 +134,9 @@ section.best_seller-section img {
 }
 
 .line-chart-svg {
-position: absolute;
+    position: absolute;
+    overflow: visible;
 }
-
-
 
 h1.percentage-whopper {
     font-size: 20vw;
@@ -165,53 +161,67 @@ h1.percentage {
 }
 
 h1.whopper-descriptif {
-    font-size: 5vw;
+    font-size: 7vw;
     text-align: center;
     position: absolute;
     text-align: center;
     top: 290vh;
-    left: 65vh;
-
-
+    left: 50vh;
 }
 
 h1.impact-sales {
     font-size: 30px;
 }
 
-div .hand-whopper {
-    width: 25vw;
-    position: absolute;
-    left: 75vw;
-}
-
+/* Troisième Viewport - Style - Ingrédients  */
 
 .titre-ingredients {
     font-size: 10rem;
     margin-bottom: 30px;
 }
 
-.titre-total,
-.calories-total {
-    margin-left: 35%;
+.ingredients-list svg {
+    position: relative;
+    right: 25%;
+}
+
+.total-kcal {
+    position: relative;
+}
+
+.total-kcal img {
+    position: absolute;
+    width: 35vw;
+    bottom: 138px;
+    right: -2%;
+}
+
+.total-nbr {
+    position: absolute;
+    width: 50vw;
+    padding: 40px 50px;
+    color: var(--dark-primary-color);
+    background-color: var(--primary-text-color);
+    text-align: left;
+    right: -2%;
+    bottom: 165px;
+    border-radius: 40px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.total-nbr * {
+    margin: 0 !important;
 }
 
 .titre-total {
     font-size: 2rem;
-    margin-bottom: -1rem;
-    margin-top: -12%;
 }
 
 .calories-total {
     font-size: 3rem;
-}
-
-.hand-whopper {
-    width: 120%;
-    height: auto;
-    align-self: flex-end;
-    margin-left: auto;
-    margin-top: -20%;
 }
 
 .ingredients-section {
@@ -231,7 +241,7 @@ div .hand-whopper {
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .tooltip strong {
@@ -244,106 +254,15 @@ div .hand-whopper {
     font-size: 14px;
 }
 
-/*  Troisième ViewPort - Style - Ingredients --------------------------------------------------------  */
-
-/* .ingredients-section {
-    margin-top: 100px;
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 200px;
-}
-
-.titre-ingredients,
-.titre-total,
-.calories-total {
-    color: white;
-    font-weight: bold;
-}
-
-.titre-ingredients {
-    font-size: 10rem;
-    margin-bottom: 30px;
-}
-
-.ingredients-list,
-.last-ingredient-and-total {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px 5px;
-
-}
-
-.ingredient,
-.total-kcal {
-    flex: 0 1 calc(50% - 5px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.total-kcal {
-    margin-top: 3%;
-}
-
-.ingredient-img {
-    border-radius: 50%;
-    background-color: var(--light-primary-color);
-    width: 100px;
-    height: 100px;
-}
-
-.ingredient-name {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    width: calc(100% + 20px);
-    text-align: center;
-}
-
-.ingredient-name::after {
-    content: '';
-    height: 3px;
-    background-color: #fff;
-    width: 140px;
-    margin: 0 auto;
-    display: block;
-}
-
-.ingredient-kcal {
-    font-size: 1.1rem;
-    margin-top: 5px;
-}
-
-.titre-total,
-.calories-total {
-    margin-left: 35%;
-}
-
-.titre-total {
-    font-size: 2rem;
-    margin-bottom: -1rem;
-    margin-top: -12%;
-}
-
-.calories-total {
-    font-size: 3rem;
-}
-
-.hand-whopper {
-    width: 120%;
-    height: auto;
-    align-self: flex-end;
-    margin-left: auto;
-    margin-top: -18%;
-} */
-
-/* -------------------------------------------------------- */
-
 .hidden-bar {
     display: none;
+}
+
+/* Quatrième ViewPort - Style - Nombre de burgers vendus par jour */
+
+.burgers_per_day-section {
+    display: flex;
+    justify-content: center;
 }
 
 /*  Cinquième ViewPort - Style - Dashboard--------------------------------------------------------  */
@@ -352,7 +271,7 @@ div .hand-whopper {
     padding: 20px;
     text-align: center;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     margin: 0 auto;
     max-width: 1200px;
     display: flex;

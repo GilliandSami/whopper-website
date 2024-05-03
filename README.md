@@ -1,5 +1,12 @@
 # 🍔 - Visualisation de Données sur le Whopper de Burger King
 
+## Table des Matières
+- [🌐 - Contexte](#contexte--)
+- [📊 - Description des Données](#description-des-données--)
+- [🎯 - But du Projet](#but-du-projet--)
+- [📚 - Références](#références--)
+- [📎 - gWireframe & Maquette](#wireframe--maquette--)
+
 ## Contexte - 🌐
 
 Ce projet s'appuie sur plusieurs ensembles de données concernant Burger King, plus spécifiquement sur son produit phare : le Whopper. 
@@ -20,7 +27,29 @@ Les données ont été collectées et mises à disposition par divers contribute
 
 - **Catégories du Menu** : Le dataset sur Kaggle ajoute une dimension catégorielle aux items du menu, distinguant par exemple les petits-déjeuners des autres types de repas.
 
-- **Autres données historiques et statistiques** : Les données suivantes sont des revues d'informations disponibles ni hierarchisés ni structurés. Ceux-ci seront donc transformés en document **JSON** afin de faciliter l'utilisation de ces données dans ce projet.
+- **Autres données historiques et statistiques** : Les données suivantes sont des revues d'informations disponibles ni hierarchisés ni structurés. Ceux-ci seront donc transformés en document **JSON** afin de faciliter l'utilisation de ces données dans ce projet. Nous pouvons présenter l'exemple ci-dessous :
+
+```json
+{
+    "food_pairings": [
+        {
+            "item": "Whopper",
+            "percentage": 40.09,
+            "image": "Whopper.png"
+        },
+        {
+            "item": "Classic Hamburger",
+            "percentage": 14.9,
+            "image": "Hamburger.png"
+        },
+        {
+            "item": "Classic Cheeseburger",
+            "percentage": 9.94,
+            "image": "Cheeseburger.png"
+        }
+    ]
+}
+```
 
 ## But du Projet - 🎯
 
