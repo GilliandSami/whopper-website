@@ -295,6 +295,35 @@ h1.impact-sales {
     margin-bottom: -20px;
 }
 
+h2.popdanemark, h2.popquatar, h2.poplux, h2.popliech {
+    position: absolute;
+    left: 34vh;
+}
+
+h2.popdanemark {
+    font-size: 1.5rem;
+    top: 260.3vw;
+}
+
+h2.popquatar {
+    font-size: 2rem;
+    top:292vw;
+
+}
+
+h2.poplux {
+    font-size: 2.5rem;
+    top:325vw;
+
+
+}   
+
+h2.popliech {
+    font-size: 3rem;
+    top:357vw;
+
+}   
+
 /*  Cinquième ViewPort - Style - Dashboard--------------------------------------------------------  */
 .dashboard-section {
     background: #F8ECD1;
