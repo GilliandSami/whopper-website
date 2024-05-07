@@ -280,6 +280,7 @@ h1.impact-sales {
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .title-container {
     font-size: 3.1rem;
     padding: 3% 0 10% 0;
@@ -293,6 +294,11 @@ h1.impact-sales {
 
 .title-countries {
     margin-bottom: -20px;
+=======
+.countries_population-section h1{
+    display: flex;
+    justify-content: center;
+>>>>>>> 17e39dd70b1900017b6ac276ece571c81503502e
 }
 
 /*  Cinquième ViewPort - Style - Dashboard--------------------------------------------------------  */
