@@ -280,9 +280,25 @@ h1.impact-sales {
     justify-content: center;
 }
 
+<<<<<<< HEAD
+.title-container {
+    font-size: 3.1rem;
+    padding: 3% 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    text-align: left;
+    width: fit-content;
+}
+
+.title-countries {
+    margin-bottom: -20px;
+=======
 .countries_population-section h1{
     display: flex;
     justify-content: center;
+>>>>>>> 17e39dd70b1900017b6ac276ece571c81503502e
 }
 
 h2.popdanemark, h2.popquatar, h2.poplux, h2.popliech {
