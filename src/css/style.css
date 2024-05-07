@@ -280,6 +280,21 @@ h1.impact-sales {
     justify-content: center;
 }
 
+.title-container {
+    font-size: 3.1rem;
+    padding: 3% 0 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    text-align: left;
+    width: fit-content;
+}
+
+.title-countries {
+    margin-bottom: -20px;
+}
+
 /*  Cinquième ViewPort - Style - Dashboard--------------------------------------------------------  */
 .dashboard-section {
     background: #F8ECD1;
