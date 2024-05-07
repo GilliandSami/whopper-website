@@ -311,6 +311,11 @@ h2.popliech {
 
 }   
 
+.countries_population-section h1{
+    display: flex;
+    justify-content: center;
+}
+
 /*  Cinquième ViewPort - Style - Dashboard--------------------------------------------------------  */
 .dashboard-section {
     background: #F8ECD1;

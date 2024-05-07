@@ -27,11 +27,7 @@ export function drawPoints() {
                     .data(countriesData)
                     .enter()
                     .append("g")
-<<<<<<< HEAD
-                    .attr("transform", ((d, i) => `translate(250, ${i*500+90})`));
-=======
                     .attr("transform", ((d, i) => `translate(250, ${i*550+90})`));
->>>>>>> refs/remotes/origin/main
 
     // Fonction pour créer les points pour chaque pays
     function createPoints(group, d) {
@@ -52,8 +48,6 @@ export function drawPoints() {
         createPoints(d3.select(this), d);
     });
 
-<<<<<<< HEAD
-=======
 // Créer une échelle pour mapper le nombre de points à une taille de police
 var fontSizeScale = d3.scaleLinear()
     .domain([0, d3.max(countriesData, d => d['whopper-per-person'])])
@@ -70,7 +64,6 @@ groups.append("text")
     .text(d => d.rapport); // Contenu texte basé sur les données de votre JSON
 
 
->>>>>>> refs/remotes/origin/main
     // Ajouter le texte et l'image pour chaque pays
     groups.append("image")
       .attr("href", d => d.populationSvg)
