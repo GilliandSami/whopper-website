@@ -26,8 +26,9 @@ export function drawPoints() {
 
     function createPoints(group, d) {
         const pointsPerLine = 17;
+        const xOffset = 15;
         for (let i = 0; i < d['whopper-per-person']; i++) {
-            const xPos = (i % pointsPerLine) * 50;
+            const xPos = (i % pointsPerLine) * 50 + xOffset;
             const yPos = (Math.floor(i / pointsPerLine) * 50) + yScale.bandwidth() / 1.4;
             group.append("circle")
                 .attr("cx", xPos)
@@ -41,7 +42,6 @@ export function drawPoints() {
         }
     }
 
-
     groups.each(function (d) {
         createPoints(d3.select(this), d);
     });
@@ -52,9 +52,9 @@ export function drawPoints() {
 
     groups.append("text")
         .attr("x", 0)
-        .attr("y", 50)
+        .attr("y", 70)
         .attr("font-size", d => fontSizeScale(d['whopper-per-person']) * 5)
-        .attr("fill", "#F4EBDC")
+        .attr("fill", "#512314")
         .attr("font-weight", "bold")
         .attr("font-family", "var(--primary-font);")
         .text(d => d.rapport)
@@ -70,16 +70,15 @@ export function drawPoints() {
         .attr("height", 300)
         .transition()
         .duration(1000)
-        .attr("y", -150);
+        .attr("y", -140);
 
     groups.append("image")
         .attr("xlink:href", d => d.svg)
-        .attr("x", 850)
+        .attr("x", 1000)
         .attr("y", 100)
         .attr("width", 300)
         .attr("height", 300)
         .transition()
         .duration(1000)
         .attr("y", -100);
-
 }
