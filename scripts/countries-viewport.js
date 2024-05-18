@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import countriesData from './datas/countries_population.json';
+import countriesData from '../datas/countries_population.json';
 
 export function drawPoints() {
     var svg = d3.select(".point-chart-svg").empty()
@@ -8,10 +8,6 @@ export function drawPoints() {
 
     svg.attr("width", 2000)
         .attr("height", 2200);
-
-    // var xScale = d3.scaleLinear()
-    //                .domain([0   , d3.max(countriesData, d => d['whopper-per-person'])])
-    //                .range([0, 800]);
 
     var yScale = d3.scaleBand()
         .domain(countriesData.map(d => d.populationSvg))
@@ -48,13 +44,13 @@ export function drawPoints() {
 
     var fontSizeScale = d3.scaleLinear()
         .domain([0, d3.max(countriesData, d => d['whopper-per-person'])])
-        .range([10, 20]); // Taille de police minimale et maximale souhaitée
+        .range([10, 20]);
 
     groups.append("text")
         .attr("x", 0)
         .attr("y", 70)
         .attr("font-size", d => fontSizeScale(d['whopper-per-person']) * 5)
-        .attr("fill", "#512314")
+        .attr("fill", "#F4EBDC")
         .attr("font-weight", "bold")
         .attr("font-family", "var(--primary-font);")
         .text(d => d.rapport)

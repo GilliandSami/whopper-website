@@ -1,6 +1,5 @@
 import * as d3 from 'd3';
 
-// Fonction pour extraire les données pour les pairings alimentaires
 function extractFoodPairings(jsonData) {
     return jsonData.food_pairings
         .filter(pairing => ['Classic Hamburger', 'Chicken Nuggets', 'French Fries', 'Classic Cheeseburger'].includes(pairing.item))
@@ -45,20 +44,16 @@ function drawScrollLine() {
         const newOffset = Math.max(height - (height * scrollPercentage * 0.8), 0);
         line.attr('stroke-dashoffset', newOffset);
 
-        // Vérifier si la ligne est complètement révélée
         if (newOffset === 0 && svgContainer.select('circle').empty()) {
-            // Supprimer l'écouteur d'événement de défilement une fois que la ligne est complètement déployée
-            window.removeEventListener('scroll', updateLine);                // Ajouter un cercle seulement s'il n'existe pas déjà
+            window.removeEventListener('scroll', updateLine);
             const circle = svgContainer.append('circle')
-                .attr('cx', 0)  // Coordonnée x du centre du cercle
-                .attr('cy', 1000)  // Coordonnée y du centre du cercle
-                .attr('r', 0.5)  // Commencez avec un rayon de 0 pour être invisible
-                .attr('fill', getComputedStyle(document.documentElement).getPropertyValue('--text-icons-color'));  // Couleur du cercle
-
-            // Animer le cercle pour agrandir de 0 à une taille spécifique
+                .attr('cx', 0)
+                .attr('cy', 1000)
+                .attr('r', 0.5)
+                .attr('fill', getComputedStyle(document.documentElement).getPropertyValue('--text-icons-color'));
             circle.transition()
-                .duration(1000)  // Durée de l'animation
-                .attr('r', circleRadius);  // Rayon final du cercle
+                .duration(1000)
+                .attr('r', circleRadius);
         }
     }
 
@@ -69,18 +64,18 @@ function animateBars(bars, x) {
     bars.transition()
         .duration(1200)
         .ease(d3.easeCubic)
-        .attr("width", d => x(d.percentage)); // Animer la largeur jusqu'à la valeur finale
+        .attr("width", d => x(d.percentage));
 }
 
 function setupBarsAnimation(svg, x) {
     const target = document.querySelector('.impact-sales');
-    const bars = svg.selectAll(".bar"); // Assurez-vous que les barres sont sélectionnées ici après leur création
+    const bars = svg.selectAll(".bar");
 
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 animateBars(bars, x);
-                observer.unobserve(entry.target); // Arrêter l'observation après l'animation
+                observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.5 });
@@ -120,11 +115,10 @@ function GenerateLoadFood() {
                 .attr("class", "bar")
                 .attr("x", 0)
                 .attr("y", d => y(d.item))
-                .attr("width", 0) // Largeur initiale à 0 pour l'animation
+                .attr("width", 0)
                 .attr("height", y.bandwidth())
                 .attr("fill", "#F4EBDC");
 
-            // Setup de l'animation une fois que tout est prêt
             setupBarsAnimation(svg, x);
 
             svg.selectAll(".label")
@@ -171,7 +165,7 @@ function GenerateLoadFood() {
 
         });
 
-    drawScrollLine(); // Assurez-vous que cette fonction est définie ailleurs
+    drawScrollLine();
 }
 
 export { extractFoodPairings, GenerateLoadFood };

@@ -1,4 +1,4 @@
-import statisticsData from './datas/burger_king_statistics.json';
+import statisticsData from '../datas/burger_king_statistics.json';
 import { select, pack, hierarchy, forceSimulation, forceCenter, forceCollide, forceManyBody } from 'd3';
 
 function generateIngredientsBubbleChart() {

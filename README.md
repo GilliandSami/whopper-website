@@ -5,7 +5,7 @@
 - [📊 - Description des Données](#description-des-données--)
 - [🎯 - But du Projet](#but-du-projet--)
 - [📚 - Références](#références--)
-- [📎 - gWireframe & Maquette](#wireframe--maquette--)
+- [📎 - Wireframe & Maquette](#wireframe--maquette--)
 
 ## Contexte - 🌐
 
